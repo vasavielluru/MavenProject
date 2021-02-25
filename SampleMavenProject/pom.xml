@@ -11,7 +11,12 @@
   <url>http://maven.apache.org</url>
 
   <properties>
+    
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    mvn sonar:sonar \
+  -Dsonar.projectKey=sample_project \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=123456
   </properties>
 
   <dependencies>
